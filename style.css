@@ -1,0 +1,315 @@
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter', sans-serif;
+}
+
+
+.top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px;
+}
+
+.desktop-links > a {
+      margin: 10px;
+      cursor: pointer;
+}
+
+.desktop-links > a:hover {
+      color: hsl(35, 77%, 62%);
+}
+
+
+.top-content {
+      display: flex;
+      margin: 50px;
+      justify-content: space-between;
+}
+
+.top-content-left-side {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 60%;
+}
+
+.top-content-right-side {
+      flex-basis: 30%;
+      background-color: hsl(240, 100%, 5%);
+      padding: 10px 20px;
+}
+
+.top-desktop-big-pic {
+      width: 100%;
+}
+
+.heading-text, .brief-details {
+      flex-basis: 50%;
+}
+
+.hb-container {
+      display: flex;
+      justify-content: space-between;
+}
+
+.top-mobile-big-pic {
+      display: none;
+}
+
+.bright-future-text {
+      font-size: 57px;
+      line-height: 53px;
+      font-weight: bold;
+      margin-top: 17px;
+}
+
+.news-content {
+      color: white;
+}
+
+.news-content-header {
+      color: hsl(35, 77%, 62%);
+}
+
+.brief-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 15px;
+}
+
+.heading-text {
+      margin-right: 15px;
+}
+
+.bd-text {
+      font-size: 18px;
+      line-height: 25px;
+}
+
+.bd-button {
+      border: none;
+      color: white;
+      background-color: hsl(5, 85%, 63%);
+      width: 180px;
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+      letter-spacing: 6px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+.bd-button:hover {
+      background-color: black;
+      color: white;
+}
+
+
+.bottom-content {
+      margin: 50px;
+      display: flex;
+      justify-content: space-between;
+      height: 150px;
+}
+
+.bottom-item {
+      display: flex;
+      flex-basis: 30%;
+      margin-top: 20px;
+}
+
+.bottom-item > div {
+      margin-left: 15px;
+}
+
+.bottom-item > div > .number {
+      font-size: 30px;
+      margin-top: 0px;
+      margin-bottom: 2px;
+      color: hsl(0, 0%, 71.8%);
+      font-weight: bold;
+}
+
+
+.bottom-item > div > .title {
+      font-size: 17px;
+      font-weight: bold;
+}
+
+
+
+
+
+.mobile-side-nav {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 250px;
+      background-color: white;
+      display: none;
+      flex-direction: column;
+}
+
+
+.img-container > img {
+      width: 35px;
+      height: 35px;
+      margin-top: 30px;
+      margin-right: 20px;
+      
+}
+
+.img-container {
+      text-align: right;
+      cursor: pointer;
+}
+
+
+.link-items {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+}
+
+.link-items > a {
+      margin-top: 20px;
+      cursor: pointer;
+}
+
+
+
+
+.page-links {
+      display: none;
+}
+
+.news-content > h4:hover {
+      cursor: pointer;
+      color: hsl(35, 77%, 62%);
+}
+
+.title {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      font-size: 15px;
+}
+
+.title:hover {
+      cursor: pointer;
+      color: hsl(5, 85%, 63%);
+}
+
+.btext {
+      font-size: 13px;
+}
+
+.bottom-item > img {
+      height: 140px;
+}
+
+
+
+
+
+.attribution {
+      margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 676px) {
+      .page-links {
+            display: inline;
+            cursor: pointer;
+      }
+      .desktop-links {
+            display: none;
+      }
+      .top-desktop-big-pic {
+            display: none;
+      }
+      .top-mobile-big-pic {
+            display: inline;
+            width: 100%;
+      }
+      .hb-container {
+            flex-direction: column;
+      }
+      .top-content {
+            flex-direction: column;
+      }
+      .top-content-right-side {
+            margin-top: 20px;
+      }
+      .brief-details {
+            margin-left: 0px;
+      }
+      .bright-future-text {
+            line-height: 33px;
+      }
+}
+
+
+@media screen and (max-width: 1145px) {
+      .bright-future-text {
+            font-size: 48px;
+      }
+}
+
+
+@media screen and (max-width: 988px) {
+      .bright-future-text {
+            font-size: 40px;
+      }
+      
+      .bottom-content {
+            height: auto;
+            flex-wrap: wrap;
+      }
+      .bottom-item {
+            flex-basis: 47%;
+      }
+}
+
+@media screen and (max-width: 848px) {
+      .bright-future-text {
+            font-size: 32px;
+      }
+}
+
+
+@media screen and (max-width: 840px) {
+      .bottom-item {
+            flex-basis: 99%;
+      }
+}
+
+@media screen and (max-width: 500px) {
+      .bottom-content, .top-bar, .top-content {
+            margin-left: 10px;
+            margin-right: 10px;
+      }
+      .bright-future-text {
+            font-size: 48px;
+            line-height: 40px;
+      }
+}
